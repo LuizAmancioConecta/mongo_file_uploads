@@ -76,9 +76,9 @@ app.get('/', (req, res) => {
 
 // @route POST /upload
 // @desc  Uploads file to DB
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/upload', upload.single('file'), (req, res) => {//PARA USAR MAIS DE UM FILE  USAR ARRAY
   // res.json({ file: req.file });
-  res.redirect('/');
+  res.redirect('/'); 
 });
 
 // @route GET /files
